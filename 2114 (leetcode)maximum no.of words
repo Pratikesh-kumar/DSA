@@ -1,0 +1,26 @@
+/**
+ * @param {string[]} sentences
+ * @return {number}
+ */
+var mostWordsFound = function(sentences) {
+    let max=0
+    for(var i=0;i<sentences.length;i++){
+        var count=1;
+        for(var j=0;j<sentences[i].length;j++){
+            var str=" ";
+         if(sentences[i][j]==str){
+             count++;
+         }
+          if(count>max){
+            max=count;
+        
+        }
+       
+        }
+      
+      
+    }
+   return max;
+};
+// try to focus on spaces ...
+// and why the count value start from 1
